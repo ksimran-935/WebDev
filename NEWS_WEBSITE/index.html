@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily News</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="d-flex align-items-center justify-content-between p-3">
+    <div class="logo">
+      <img class="news" src="images/logo.png" alt="NEWS" height="40">
+    </div>
+
+    <nav class="nav_bar ">
+      <div class="Category" id="Sports" onclick="inNavItemClick('Sports')">Sports</div>
+      <div class="Category" id="Finance" onclick="inNavItemClick('Finance')">Finance</div>
+      <div class="Category" id="Technology" onclick="inNavItemClick('Technology')">Technology</div>
+      <div class="Category" id="Politics" onclick="inNavItemClick('Politics')">Politics</div>
+      <div class="Category" id="Health" onclick="inNavItemClick('Health')">Health</div>
+      <div class="Category" id="Science" onclick="inNavItemClick('Science')">Science</div>
+    </nav>
+
+    <div class="d-flex search_bar">
+    <input class="form-control me-2 bar" type="search" placeholder="Search" aria-label="Search" id="search-text">
+    <button class="button" id="search-button" type="button">Search</button>
+  </div>
+  </header>
+  <main>
+    <div class="card-container" id="cards-container">
+    
+  </div>
+   <template id="template-news-card">
+    <div class="card">
+      <div class="class-header">
+        <img src="https://placehold.co/400x200" alt="news-image">
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">This is the title.</h3>
+        <h6 class="news-source">End Gadget 26/08/2025</h6>
+        <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis maxime ut fuga! Cum, accusamus qui? Laudantium, sapiente fugit, exercitationem, ipsam nam quod corrupti distinctio molestias laborum cumque ullam minima.</p>
+      </div>
+    </div>
+   </template>
+  
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
